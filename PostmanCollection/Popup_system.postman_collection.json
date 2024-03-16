@@ -1,0 +1,228 @@
+{
+	"info": {
+		"_postman_id": "4637c5fb-7a9f-4fc7-9b0a-7995b75bed87",
+		"name": "Popup_system",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23277839",
+		"_collection_link": "https://www.postman.com/universal-desert-626349/workspace/popup-system/collection/23277839-4637c5fb-7a9f-4fc7-9b0a-7995b75bed87?action=share&source=collection_link&creator=23277839"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Popup",
+			"item": [
+				{
+					"name": "create_popup",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "aFVj8b9ko0dre2MPkye0fHIbN9pwTPn24SOzlWpHf238c4a3",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "new popup",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "bala bla bla",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "bala bla bla bla bla",
+									"type": "text"
+								},
+								{
+									"key": "color",
+									"value": "blue",
+									"type": "text"
+								},
+								{
+									"key": "popup_type_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{local}}/popups",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"popups"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "vYcsZ2FHJI2nJ5v9b2gvb6l5gCLBDVOCY6eYmVADce4082aa",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "new popup updated",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "update title",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "color",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{local}}/popups/1",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"popups",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/popups/1",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"popups",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PopupInteraction",
+			"item": [
+				{
+					"name": "create_interaction",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "xPm7xy6VIx46sQGJKmF95NZpmT7wbZBftAyFXatw097d524c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "popup_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "click",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{local}}/popup/interaction",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"popup",
+								"interaction"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
