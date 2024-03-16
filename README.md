@@ -49,7 +49,7 @@ To facilitate testing and development, this project uses Laravel's factory and s
 ## Testing with Postman
 You can test this project by using Postman. Follow these steps:
 1. Download and install Postman from the Postman website.
-2. Import the Postman collection by clicking on the "Import" button in Postman and selecting the User-ProductManager/postman_collection/Popup_system.postman_collection.json.
+2. Import the Postman collection by clicking on the "Import" button in Postman and selecting the PopupTask/postman_collection/Popup_system.postman_collection.json.
 3. Once imported, you will see the collection and its requests in the left sidebar.
 4. Configure any necessary environment variables within Postman if required for authentication tokens, base URLs, or other configuration values.
 5. Start testing the project by sending requests using the imported collection.
