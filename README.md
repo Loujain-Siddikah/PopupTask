@@ -31,6 +31,8 @@ In this API, I utilize Laravel's built-in validation features to ensure that inc
 This API implements authorization using roles, leveraging Spatie's Laravel Permissions package.
 to make the owner only can manage popups.
 
+### Data Transfer Objects (DTOs)
+This project utilizes Data Transfer Objects (DTOs) are used in API responses to provide a clean and standardized representation of data.
 ### Real-time Notification 
 Events are triggered within the application codebase when user interactions with popups.
 Broadcasting allows sending these events to subscribed clients(owner) in real-time using broadcasting pusher drivers .
